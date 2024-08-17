@@ -1,201 +1,31 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos globais */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Área Principal */
-.main-area {
+.welcome-area {
     background-color: #f7a89f;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
-.main-area .logo {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
+.welcome-area h2 {
+    font-size: 2.5rem;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.main-area h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.main-area .welcome-message {
+.welcome-area p {
     font-size: 1.2rem;
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 
-/* Cabeçalho */
-header {
+.welcome-area .btn {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #333;
     color: white;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-}
-
-header nav ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #ccc;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Seção de Receitas */
-.recipes {
-    padding: 20px 0;
-    background-color: #f7a89f;
-    text-align: center;
-}
-
-.recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.recipe-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.recipe-card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.recipe-card h3 {
-    margin: 15px 0;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.recipe-card ul {
-    list-style: none;
-    margin: 10px 0;
-    padding: 0;
-    text-align: left;
-}
-
-.recipe-card ul li {
-    background: url('checkmark.png') no-repeat left center;
-    padding-left: 20px;
-    margin-bottom: 5px;
-}
-
-.recipe-card p {
-    font-size: 1rem;
-    color: #666;
-    text-align: left;
-}
-
-.recipe-card:hover {
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-footer .footer-section {
-    flex: 1;
-    margin: 10px;
-}
-
-footer .footer-section h3 {
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    color: #f7a89f;
-}
-
-footer .footer-section p, footer .footer-section ul {
-    color: #ccc;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-footer .footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer .footer-section ul li {
-    margin-bottom: 10px;
-}
-
-footer .footer-section ul li a {
-    color: #f7a89f; /* Cor ajustada para melhorar a visibilidade */
-    text-decoration: none;
-}
-
-footer .footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
-footer .footer-bottom {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    border-top: 1px solid #777;
-    padding-top: 20px;
-    color: #aaa;
-}
-
-@media (max-width: 768px) {
-    footer .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer .footer-section {
-        margin: 20px 0;
-    }
+.welcome-area .btn:hover {
+    background-color: #555;
 }
