@@ -176,20 +176,20 @@ footer {
 }
 
 .footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: nowrap;
     gap: 20px;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .footer-section {
     flex: 1;
     padding: 20px;
-    border-radius: 8px;
-    background-color: #555;
 }
 
 .footer-section h3 {
@@ -224,16 +224,16 @@ footer {
 }
 
 .footer-bottom {
+    text-align: center;
     margin-top: 20px;
     font-size: 0.9rem;
     border-top: 1px solid #555;
     padding-top: 20px;
     color: #aaa;
-    text-align: center;
 }
 
 @media (max-width: 768px) {
-    .footer-container {
+    .footer-content {
         flex-direction: column;
         text-align: center;
     }
