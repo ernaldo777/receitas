@@ -24,19 +24,6 @@
             object-fit: cover;
         }
 
-        /* Nav Menu */
-        .nav-item .nav-link {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
-
-        .nav-item .nav-link:hover {
-            color: #ff7f50;
-        }
-
         /* Formulário */
         form {
             background-color: #f9f9f9;
@@ -50,7 +37,7 @@
             color: #dc3545;
         }
 
-        input[type="text"], input[type="email"] {
+        input[type="text"], input[type="email"], select {
             border: 1px solid #ccc;
             padding: 10px;
             border-radius: 4px;
@@ -59,7 +46,7 @@
             transition: border-color 0.3s, box-shadow 0.3s;
         }
 
-        input[type="text"]:focus, input[type="email"]:focus {
+        input[type="text"]:focus, input[type="email"]:focus, select:focus {
             border-color: #28a745;
             box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
         }
@@ -174,7 +161,36 @@
                 </div>
                 <div class="mb-3">
                     <label for="uf" class="form-label">UF</label>
-                    <input type="text" class="form-control" id="uf" name="uf" required>
+                    <select class="form-control" id="uf" name="uf" required>
+                        <option value="">Selecione o Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
