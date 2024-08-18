@@ -33,7 +33,9 @@ header {
 }
 
 .logo {
-    width: 120px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .nav-list {
@@ -174,6 +176,13 @@ footer {
 .footer-section {
     flex: 1;
     margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #555;
+}
+
+.footer-section + .footer-section {
+    margin-left: 20px;
 }
 
 .footer-section h3 {
@@ -229,5 +238,6 @@ footer {
 
     .footer-section {
         margin: 20px 0;
+        padding: 20px;
     }
 }
