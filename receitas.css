@@ -1,17 +1,28 @@
+/* receitas.css */
+
 body {
     background-color: #f8d7da;
 }
 
 .recipe-container {
-    background-color: #f8d7da; /* Mesma cor de fundo das outras páginas */
+    background-color: #f8d7da;
     padding: 20px;
 }
 
+/* Estilo para as cartas das receitas */
 .recipe-container .card {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: white; /* Para que as cartas tenham fundo branco */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .recipe-container .card-img-top {
@@ -30,7 +41,63 @@ body {
     padding-left: 20px;
 }
 
-.logo {
-    width: 50px; /* Mantém a logo pequena */
-    height: auto; /* Ajusta a altura automaticamente */
+.recipe-container .card-title::first-letter {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.recipe-container .card-title::after {
+    content: " 🥗";
+    font-size: 90%;
+    color: #28a745;
+}
+
+/* Estilo do menu de navegação */
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.nav-item::before {
+    content: "➜ ";
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p::after {
+    content: " ©";
+    color: #ffc107;
+}
+
+.footer-links .nav-item a:hover {
+    color: #ffc107;
+}
+
+.footer-links h3::after {
+    content: " ↗";
+    font-size: 12px;
+    color: #ffc107;
+}
+
+.footer-links a::before {
+    content: "• ";
+    color: #ffc107;
+}
+
+.footer-contact p::first-line {
+    font-weight: bold;
+    color: #ffffff;
 }
