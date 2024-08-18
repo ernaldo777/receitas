@@ -5,55 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site de receitas culinárias, descubra e experimente deliciosas receitas.">
     <title>Receitas Deliciosas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="formatos.css">
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
-        <div class="container header-container">
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
             <img src="logotipo.png" alt="Logotipo Receitas Deliciosas" class="logo">
             <nav>
-                <ul class="nav-list">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="receitas.html">Receitas</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="receitas.html" class="nav-link text-white">Receitas</a></li>
+                    <li class="nav-item"><a href="cadastro.html" class="nav-link text-white">Cadastro</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Área de Boas-Vindas Melhorada -->
-    <section class="welcome-container">
-        <div class="container welcome-container">
-            <h2>Bem-vindo ao Receitas Deliciosas</h2>
-            <p>Descubra uma variedade de receitas cuidadosamente selecionadas para tornar seu dia a dia mais saboroso e prático. Desde pratos tradicionais até inovações culinárias, temos algo para todos os gostos.</p>
-            <a href="receitas.html" class="btn">Explore Nossas Receitas</a>
+    <section class="welcome-container text-center p-5">
+        <div class="container">
+            <h2 class="display-4">Bem-vindo ao Receitas Deliciosas</h2>
+            <p class="lead">Descubra uma variedade de receitas cuidadosamente selecionadas para tornar seu dia a dia mais saboroso e prático. Desde pratos tradicionais até inovações culinárias, temos algo para todos os gostos.</p>
+            <a href="receitas.html" class="btn btn-dark btn-lg mt-3">Explore Nossas Receitas</a>
         </div>
     </section>
 
     <!-- Rodapé -->
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-content">
-                <div class="footer-section links">
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
                     <h3>Links Úteis</h3>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="receitas.html">Receitas</a></li>
-                        <li><a href="cadastro.html">Cadastro</a></li>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="home.html" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="receitas.html" class="nav-link text-white">Receitas</a></li>
+                        <li class="nav-item"><a href="cadastro.html" class="nav-link text-white">Cadastro</a></li>
                     </ul>
                 </div>
-                <div class="footer-section contact">
+                <div class="col-md-6">
                     <h3>Contato</h3>
                     <p>Email: contato@receitasdeliciosas.com</p>
                     <p>Telefone: (85) 1234-5678</p>
                     <p>Endereço: Rua das Delícias, 123, Fortaleza, CE</p>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="text-center mt-4">
                 <p>&copy; 2024 Receitas Deliciosas. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
