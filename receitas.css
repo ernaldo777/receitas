@@ -4,12 +4,38 @@ body {
     background-color: #f8d7da;
 }
 
+/* Cabeçalho */
+header {
+    background-color: #444; /* Cor de fundo padronizada */
+    color: white; /* Cor do texto padronizada */
+    padding: 15px 0;
+}
+
+.logo {
+    width: 80px; /* Tamanho padronizado do logotipo */
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Nav Menu */
+.nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-item .nav-link:hover {
+    color: #ff7f50;
+}
+
+/* Seção de Receitas */
 .recipe-container {
     background-color: #f8d7da;
     padding: 20px;
 }
 
-/* Estilo para as cartas das receitas */
 .recipe-container .card {
     height: 100%;
     display: flex;
@@ -37,10 +63,6 @@ body {
     justify-content: space-between;
 }
 
-.recipe-container .card ul {
-    padding-left: 20px;
-}
-
 .recipe-container .card-title::first-letter {
     font-size: 120%;
     font-weight: bold;
@@ -52,34 +74,12 @@ body {
     color: #28a745;
 }
 
-/* Estilo do menu de navegação */
-.nav-link {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: #ffc107;
-    text-decoration: underline;
-}
-
-.nav-item::before {
-    content: "➜ ";
-    color: #ffffff;
-    margin-right: 5px;
-}
-
-/* Estilo do rodapé */
+/* Footer */
 footer {
-    background-color: #343a40;
-    color: #ffffff;
+    background-color: #343a40; /* Cor de fundo padronizada */
+    color: white; /* Cor do texto padronizada */
     padding: 20px 0;
     text-align: center;
-}
-
-footer p::after {
-    content: " ©";
-    color: #ffc107;
 }
 
 .footer-links .nav-item a:hover {
@@ -97,7 +97,7 @@ footer p::after {
     color: #ffc107;
 }
 
-.footer-contact p::first-line {
-    font-weight: bold;
-    color: #ffffff;
+footer p::after {
+    content: " ©";
+    color: #ffc107;
 }
