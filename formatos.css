@@ -71,6 +71,14 @@ header {
     box-sizing: border-box;
 }
 
+/* Remover margens e paddings extras */
+.welcome-container,
+.recipe-container,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
 .welcome-container h2 {
     font-size: 2.8rem;
     color: #333;
@@ -170,7 +178,7 @@ footer {
     background: #444;
     color: white;
     padding: 40px 20px;
-    margin-top: 40px;
+    margin: 0;
     width: 100%;
     box-sizing: border-box;
 }
