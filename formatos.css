@@ -1,17 +1,12 @@
 /* formatos.css */
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Estilos globais */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f8d7da; /* Cor de fundo igual ao receitas.html */
+    background-color: #f8d7da; /* Mesma cor de fundo usada em receitas.html */
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 /* Cabeçalho */
