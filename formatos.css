@@ -40,6 +40,11 @@ header {
     color: #ff7f50;
 }
 
+/* Página ativa no menu */
+.nav-item .nav-link.active {
+    color: #ffc107; /* Cor destacada para o item ativo */
+}
+
 /* Estilo do rodapé */
 footer {
     background-color: #343a40;
